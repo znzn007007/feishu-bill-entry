@@ -17,6 +17,17 @@ Before using this skill, make sure all of the following are true:
 - The Feishu app has permission to access the target Bitable.
 - The target Bitable table has the required standard fields, or the user is willing to create them.
 - The target table has been shared to the Feishu app.
+- **Configuration is required**: create `~/.openclaw/workspace/config/feishu-bill.json` before using this skill.
+
+Use this config shape:
+
+```json
+{
+  "app_token": "YOUR_APP_TOKEN",
+  "table_id": "YOUR_TABLE_ID",
+  "table_name": "账单明细"
+}
+```
 
 Recommended table name: `账单明细`.
 
@@ -117,6 +128,7 @@ Expense categories:
 - 医疗健康
 - 社交人情
 - 娱乐消费
+- 旅游出行
 - 学习成长
 - 数字服务
 - 其他支出
@@ -142,10 +154,11 @@ Use structured single-select channels. Prefer existing configured values. If a c
 1. Prepare a Feishu Bitable table.
 2. Ensure it contains the standard fields required by this skill.
 3. Share the table to the Feishu app.
-4. Install/use this skill.
-5. Send a screenshot or natural-language bill.
-6. Review the generated summary.
-7. Confirm explicitly to write the record.
+4. Create `~/.openclaw/workspace/config/feishu-bill.json` and fill in `app_token` and `table_id`.
+5. Install/use this skill.
+6. Send a screenshot or natural-language bill.
+7. Review the generated summary.
+8. Confirm explicitly to write the record.
 
 ## References
 

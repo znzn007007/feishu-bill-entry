@@ -41,6 +41,7 @@ Use the same seven fields in the user-facing review summary:
 - 医疗健康
 - 社交人情
 - 娱乐消费
+- 旅游出行
 - 学习成长
 - 数字服务
 - 其他支出
@@ -62,8 +63,13 @@ Recommended initial options:
 - 招商银行卡
 - 中信信用卡
 - 交通银行信用卡
+- 交通银行卡
 - 现金
 - 其他
+
+Normalization guidance:
+- `微信零钱` → `微信`
+- `交行借记卡` → `交通银行卡`
 
 ### 账本
 Recommended initial options:
